@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile Bank</title>
+    <!-- style.css file link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisy UI and Tailwind cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ionicons CDN link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="max-w-md min-h-screen bg-white mx-auto py-2">
+    <!-- Header and nav section -->
+    <header>
+      <nav class="flex justify-between items-center p-2 border-b-2">
+        <div class="flex items-center gap-2">
+          <img class="w-[50px]" src="./assets/Group.png" alt="Image" />
+          <div>
+            <h1 class="text-3xl text-black font-bold">$ <span>4500</span></h1>
+            <p>Available Balance</p>
+          </div>
+        </div>
+        <div>
+          <button
+            id="logout-btn"
+            class="btn hover:bg-slate-200 hover:border-slate-400 border-2 border-slate-300 bg-white rounded-xl"
+          >
+            <ion-icon
+              class="text-xl rotate-180"
+              name="log-out-outline"
+            ></ion-icon>
+            Log Out
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <script src="./script fills/logout.js"></script>
+    <script src="./script fills/utilities.js"></script>
+  </body>
+</html>

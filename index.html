@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- style.css file link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisy UI and Tailwind cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Login Form layout -->
+    <section class="max-w-md min-h-screen bg-slate-200 mx-auto py-6">
+      <header>
+        <nav class="h-48 flex justify-center items-center">
+          <div
+            class="h-full w-[400px] relative flex items-center justify-center top-28"
+          >
+            <img class="w-xs absolute" src="./assets/bg.png" alt="" />
+            <img class="w-[75px] mb-28" src="./assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Login form  -->
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text text-black text-lg font-bold"
+                      >Mobile Number</span
+                    >
+                  </label>
+                  <input
+                    id="mobile-number"
+                    type="number"
+                    placeholder="Enter your number"
+                    class="input input-bordered rounded-full bg-slate-200 text-black border-white"
+                    value="01701701701"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text text-black text-lg font-bold"
+                      >4 Digit Pin</span
+                    >
+                  </label>
+                  <input
+                    id="pin"
+                    type="number"
+                    placeholder="Enter 4 Digit Pin"
+                    class="input input-bordered rounded-full bg-slate-200 text-black border-white"
+                    required
+                    value="1234"
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    id="login-btn"
+                    class="btn btn-primary hover:bg-blue-600 rounded-full bg-[#0874f2] text-white text-xl"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- JavaScript file linked -->
+    <script src="./script fills/login.js"></script>
+    <script src="./script fills/utilities.js"></script>
+  </body>
+</html>
